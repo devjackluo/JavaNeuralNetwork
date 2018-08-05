@@ -7,5 +7,18 @@
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="file://$MODULE_DIR$/JCuda-All-0.9.2" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES>
+          <root url="file://$MODULE_DIR$/JCuda-All-0.9.2" />
+        </SOURCES>
+        <jarDirectory url="file://$MODULE_DIR$/JCuda-All-0.9.2" recursive="false" />
+        <jarDirectory url="file://$MODULE_DIR$/JCuda-All-0.9.2" recursive="false" type="SOURCES" />
+      </library>
+    </orderEntry>
   </component>
 </module>
