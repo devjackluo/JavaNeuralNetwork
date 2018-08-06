@@ -51,7 +51,7 @@ public class Network implements Serializable{
 
             this.output[i] = new double[NETWORK_LAYER_SIZES[i]];
             //this.bias[i] = new double[NETWORK_LAYER_SIZES[i]];
-            this.bias[i] = createRandomArray(NETWORK_LAYER_SIZES[i], -0.5, 0.5);
+            this.bias[i] = createRandomArray(NETWORK_LAYER_SIZES[i], -1.0, 1.0);
 
 
             this.error_signal[i] = new double[NETWORK_LAYER_SIZES[i]];
@@ -109,7 +109,7 @@ public class Network implements Serializable{
         for(int i = 0 ; i < loop; i++){
             TrainSet batch = trainSet.extractBatch(batch_size);
             for(int b = 0; b < batch.size(); b++){
-                this.train(batch.getInput(b), batch.getOutput(b), 0.2);
+                this.train(batch.getInput(b), batch.getOutput(b), 0.3);
             }
         }
     }
